@@ -19,36 +19,44 @@ plastic_waste <- read_csv("data/plastic-waste.csv")
 
 ### Exercise 1
 
-*Remove this text, and add your answer for Exercise 1 here.*
+*Most countries produce relatively little plastic waste aside from a few in Europe, Asia, and North America. Oceania and South America produce little plastic waste compared to the other continents while Africa is in the middle*
 
-```{r plastic-waste-continent}
-# remove this comment and add the code for Exercise 1 here
-```
+#```{r plastic-waste-continent}
+#    ggplot(data = plastic_waste, aes(x = plastic_waste_per_cap)) +
+#  geom_histogram(binwidth = 0.2) + facet_wrap(~ continent)
+#```
+
 
 ### Exercise 2
 
-```{r plastic-waste-density}
-# remove this comment and add the code for Exercise 2 here
+#```{r plastic-waste-density}
+#   ggplot(data = plastic_waste, 
+#       mapping = aes(x = plastic_waste_per_cap, 
+#                     color = continent, 
+#                     fill = continent)) +
+#  geom_density(alpha = 0.4)
 ```
 
 ### Exercise 3
 
-*Remove this text, and add your answer for Exercise 3 here.*
+*The fill and colour of the curves were aesthetics because they relate to how representation is created, while the alpha value is a modification to the finished representation*
 
 ### Exercise 4
+#The violin plots do not reveal the outliers in the same way that box plots do 
 
-*Remove this text, and add your answer for Exercise 4 here.*
-
-```{r plastic-waste-violin}
-# remove this comment and add the code for Exercise 4 here
-```
+#```{r plastic-waste-violin}
+#   ggplot(data = plastic_waste, 
+#       mapping = aes(x = continent, 
+#                     y = plastic_waste_per_cap)) +
+#  geom_violin()
+#```
 
 ### Exercise 5
 
 *Remove this text, and add your answer for Exercise 5 here.*
 
 ```{r plastic-waste-mismanaged}
-# remove this comment and add the code for Exercise 5 here
+    ggplot()
 ```
 
 ### Exercise 6
@@ -56,7 +64,7 @@ plastic_waste <- read_csv("data/plastic-waste.csv")
 *Remove this text, and add your answer for Exercise 6 here.*
 
 ```{r plastic-waste-mismanaged-continent}
-# remove this comment and add the code for Exercise 6 here
+
 ```
 
 ### Exercise 7
